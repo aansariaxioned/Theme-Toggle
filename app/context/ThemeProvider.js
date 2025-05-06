@@ -14,7 +14,7 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'light' || storedTheme === 'dark') {
+    if (storedTheme === 'dark') {
       setTheme(storedTheme);
       document.body.className = storedTheme;
     } else {
